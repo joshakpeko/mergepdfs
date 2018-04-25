@@ -9,7 +9,7 @@ def main():
     files = sys.argv[1:]
     if len(files) < 2:
         print("Provide at least 2 pdf files to merge")
-        os.Exit(1)
+        sys.exit(0)
     mergeFiles(*files)
     return
 
